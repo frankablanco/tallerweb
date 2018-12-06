@@ -29,3 +29,14 @@ function initMap() {
 
 }
 
+$( document ).ready(function() {
+
+  $(".scroll").on("click", function() {
+    var el = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(el).offset().top
+    }, 600);
+  });
+
+});
+
