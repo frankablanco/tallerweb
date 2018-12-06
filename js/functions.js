@@ -38,5 +38,14 @@ $( document ).ready(function() {
     }, 600);
   });
 
+
+	$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+        $('#main-header').addClass('fixed');
+    } else {
+        $('#main-header').removeClass('fixed');
+    }
+	});
+
 });
 
