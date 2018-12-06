@@ -1,0 +1,354 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.wrap {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+
+#main-header {
+  background-color: #00ADB5;
+}
+
+#main-header .header-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#main-header .header-content #logo {
+  background-color: aqua;
+}
+
+#main-header .header-content .menu-social {
+  display: flex;
+  align-items: center;
+}
+
+#main-header .header-content #main-menu ul li {
+  display: inline-block;
+}
+
+#main-header .header-content #main-menu ul li a {
+  display: block;
+  padding: 1.2em 0.4em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#main-header .header-content #social-icons ul li {
+  display: inline-block;
+}
+
+#main-header .header-content #social-icons ul li a {
+  display: block;
+  margin-left: 0.8em;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+
+/*
+// --------------------------------------------------
+// Main Slider
+// --------------------------------------------------
+*/
+
+#main-slider .slider {
+  margin: 0;
+  padding: 0; }
+
+
+#main-slider .slider .slides {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#main-slider .slider .slides img {
+  width: 100%;
+  display: block; }
+
+#main-slider .slider .slides:after {
+  clear: both;
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+#main-slider .slider .slides .slide {
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-slider .slider .slides .slide .slide-content {
+  width: 50%;
+  background-color:  rgba(0,173,181,0.8);
+  padding: 2em;
+	text-align: center;
+}
+
+#main-slider .slider .slides .slide .slide-content .slide-title a {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 2.3em;
+	color: #ffffff; }
+
+#main-slider .slider .slides .slide .slide-content .slide-excerpt {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	line-height: 2em;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+#main-slider .slider .slides .slide .slide-content .slide-button {
+	display: inline-block;
+	padding: 1em 4em;
+	border: 2px solid #ffffff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+  font-size: 1.3em;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out; }
+
+#main-slider .slider .slides .slide .slide-content .slide-button:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+	color: #00ADB5; }
+
+#main-slider .slider .flex-control-nav {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#main-slider .slider .flex-control-nav li {
+  display: table-cell; }
+
+#main-slider .slider .flex-control-nav li a {
+  display: block;
+  overflow: hidden;
+  height: 20px;
+  background-color: #efefef;
+  text-indent: -9999px;
+	cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+
+#main-slider .slider .flex-control-nav li a:hover, #main-slider .slider .flex-control-nav li a.flex-active {
+  background-color: #00ADB5; }
+
+
+@media only screen and (max-width: 600px) {
+
+	#main-slider .slider .slides .slide .slide-content .slide-title a {
+		font-size: 1.5em; }
+
+}
+
+
+/*
+// --------------------------------------------------
+// Main Info
+// --------------------------------------------------
+*/
+
+
+#main-info .info-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#main-info .info-content .info-item {
+  max-width: 31%;
+  margin-bottom: 1.5em;
+  text-align: center;
+  background-color: #00ADB5;
+  padding: 2em 1em;
+  color: #ffffff;
+  box-shadow: 10px 10px #efefef;
+}
+
+#main-info .info-content .info-item .item-image {
+  margin-bottom: 1em;
+}
+
+#main-info .info-content .info-item .item-image img {
+  display: inline-block;
+}
+
+#main-info .info-content .info-item .item-title {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+#main-info .info-content .info-item .item-desc {
+  font-weight: bold;
+  line-height: 1.4em;
+  font-size: 1.1em;
+}
+
+/*
+// --------------------------------------------------
+// Main About
+// --------------------------------------------------
+*/
+
+#main-about {
+  background-image: url("../img/bg-about.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+#main-about .about-content {
+  padding: 3em;
+  width: 45%;
+  background-color: #00ADB5;
+  color: #ffffff;
+}
+
+#main-about .about-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 1em;
+}
+
+#main-about .about-content p {
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+/*
+// --------------------------------------------------
+// Main Team
+// --------------------------------------------------
+*/
+
+#main-team {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+#main-team .team-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#main-team .team-title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3em;
+  color: #00ADB5;
+  margin-bottom: 1.5em;
+}
+
+#main-team .team-content .team-item {
+  width: 30%;
+  text-align: center; 
+  margin-bottom: 2.6em;
+}
+
+#main-team .team-content .team-item .item-image {
+  margin-bottom: 1em;
+}
+
+#main-team .team-content .team-item .item-image img {
+  display: inline-block;
+  border: 4px solid #00ADB5;
+}
+
+#main-team .team-content .team-item .item-title {
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+  color: #00ADB5;
+}
+
+#main-team .team-content .team-item .item-subtitle {
+  color: #a7a7a7;
+}
+
+/*
+// --------------------------------------------------
+// Main Footer
+// --------------------------------------------------
+*/
+
+#main-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#main-footer .footer-content {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #00ADB5;
+}
+
+/*
+// --------------------------------------------------
+// Main Map
+// --------------------------------------------------
+*/
+
+#main-map {
+
+}
+
+
+#main-map #address {
+  width: 100%;
+  height: 350px;;
+}
