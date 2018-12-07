@@ -41,7 +41,7 @@ $( document ).ready(function() {
 
 
 	$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 800) {
+    if ($(window).scrollTop() > 600) {
       $('#main-header').addClass('fixed');
     } else {
       $('#main-header').removeClass('fixed');

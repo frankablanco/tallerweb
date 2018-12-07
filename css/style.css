@@ -247,7 +247,7 @@ ul, li {
 #main-about {
   background-image: url("../img/bg-about.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 4em;
@@ -309,6 +309,7 @@ ul, li {
 }
 
 #main-team .team-content .team-item .item-image img {
+  max-width: 230px;
   display: inline-block;
   border: 4px solid #00ADB5;
 }
@@ -320,6 +321,7 @@ ul, li {
 }
 
 #main-team .team-content .team-item .item-subtitle {
+  font-weight: bold;
   color: #a7a7a7;
 }
 
