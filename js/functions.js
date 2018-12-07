@@ -49,5 +49,18 @@ $( document ).ready(function() {
 	});
 
 
+	// Modal Menu
+	$("#btn-responsive").click(function(){
+		$("#menu-responsive").fadeIn();
+	});
+
+	$(".close").click(function(){
+		$("#menu-responsive").fadeOut();
+	});
+
+	$(".scroll").click(function(){
+		$("#menu-responsive").fadeOut();
+	});
+
 });
 
