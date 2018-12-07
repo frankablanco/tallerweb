@@ -29,8 +29,6 @@ ul, li {
   list-style: none;
 }
 
-
-
 .wrap {
   max-width: 1170px;
   width: 100%;
@@ -80,10 +78,11 @@ ul, li {
   color: #ffffff;
 }
 
-.fixed {
+#main-header.fixed {
   width: 100%;
   position: fixed;
   z-index: 1;
+  border-bottom: 2px solid #efefef;
 }
 
 /*
@@ -326,6 +325,109 @@ ul, li {
 
 /*
 // --------------------------------------------------
+// Main Contact
+// --------------------------------------------------
+*/
+
+#main-contact {
+  background-color: #00ADB5;
+}
+
+#main-contact #address {
+  width: 100%;
+  height: 350px;;
+}
+
+#main-contact .adress-content {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  align-items: center;
+}
+
+#main-contact .adress-content .adress-date {
+  width: 30%;
+}
+
+#main-contact .adress-content .adress-date h2 {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+#main-contact .adress-content .adress-date p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+#main-contact .adress-content .adress-date p i {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+
+#main-contact .adress-content .contact-form {
+  width: 70%;
+}
+
+#main-contact .adress-content .contact-form h2 {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+/*
+// --------------------------------------------------
+// Form
+// --------------------------------------------------
+*/
+
+.form {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.form .text-form, .form .textarea-form {
+  margin-top: 0.5em;
+  margin-bottom: 1.2em;
+  width: 47%;
+  padding: 1em;
+  border: 0;
+}
+
+.form .textarea-form {
+  width: 100%;
+  height: 200px;
+}
+
+.form .button-form {
+  margin: auto;
+  padding: 1em 2em;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.form .button-form:hover {
+  background-color: #ffffff;
+  color: #00ADB5;
+  cursor: pointer;
+}
+
+/*
+// --------------------------------------------------
 // Main Footer
 // --------------------------------------------------
 */
@@ -338,22 +440,7 @@ ul, li {
 #main-footer .footer-content {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1em;
+  font-weight: bold;
   color: #00ADB5;
-}
-
-/*
-// --------------------------------------------------
-// Main Map
-// --------------------------------------------------
-*/
-
-#main-map {
-
-}
-
-
-#main-map #address {
-  width: 100%;
-  height: 350px;;
 }

@@ -39,13 +39,15 @@ $( document ).ready(function() {
   });
 
 
+
 	$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 100) {
-        $('#main-header').addClass('fixed');
+    if ($(window).scrollTop() > 800) {
+      $('#main-header').addClass('fixed');
     } else {
-        $('#main-header').removeClass('fixed');
+      $('#main-header').removeClass('fixed');
     }
 	});
+
 
 });
 

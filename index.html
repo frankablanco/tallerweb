@@ -31,7 +31,7 @@
                         <li><a class="scroll" href="#main-info">Servicios</a></li>
                         <li><a class="scroll" href="#main-about">Sobre Nosotros</a></li>
                         <li><a class="scroll" href="#main-team">Nuestro Equipo</a></li>
-                        <li><a class="scroll" href="#main-form">Contacto</a></li>
+                        <li><a class="scroll" href="#main-contact">Contacto</a></li>
                     </ul>
                 </nav>
         
@@ -195,8 +195,31 @@
 </section>
 
 
-<section id="main-map">
+<section id="main-contact">
     <div id="address"></div>
+    <div class="wrap">
+        <div class="adress-content">
+            <div class="adress-date">
+                <h2>Nuestros datos</h2>
+                <p><i class="fas fa-map-marker-alt"></i> <b>Dirección:</b><br>Calle Alcalde Ezequiel Masoni, 12, 36900 Marín, Pontevedra, España</p>
+                <p><i class="fas fa-phone"></i> <b>Teléfono:</b><br>+34 986 88 42 45</p>
+                <p><i class="fas fa-envelope"></i> <b>Correo:</b><br>clinicadoctorantelo@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <h2>Envía tu mensaje</h2>
+<!-- Formulario de contacto -->
+<form action="enviar.php" method="post" class="form"> 
+    <input type="text" name="nombres" placeholder="Nombres" class="text-form" required>
+    <input type="text" name="apellidos" placeholder="Apellidos" class="text-form" required>
+	<input type="number" name="telefono" placeholder="Teléfono" class="text-form" required>
+    <input type="email" name="email" placeholder="Email" class="text-form" required>
+	<textarea name="mensaje" placeholder="Mensaje" class="textarea-form"></textarea>
+	<input type="submit" value="Enviar mensaje" class="button-form">
+</form>
+<!-- Formulario de contacto -->
+            </div>
+        </div>
+    </div>
 </section>
     
 
