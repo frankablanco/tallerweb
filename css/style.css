@@ -36,9 +36,11 @@ ul, li {
 }
 
 @media only screen and (max-width: 1170px) {
+
 	.wrap {
 		width: 90%;
-	}
+  }
+
 }
 
 #main-header {
@@ -110,6 +112,14 @@ ul, li {
 	#main-header .header-content #main-menu {
 		display: none;
 	}
+
+}
+
+@media only screen and (max-width: 520px) {
+
+  #main-header .header-content #social-icons {
+    display: none;
+  }
 
 }
 
@@ -187,7 +197,6 @@ ul, li {
 	}
 
 }
-
 
 /*
 // --------------------------------------------------
@@ -290,13 +299,56 @@ ul, li {
   background-color: #00ADB5; }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
-	#main-slider .slider .slides .slide .slide-content .slide-title a {
-		font-size: 1.5em; }
+  #main-slider .slider .slides .slide .slide-content .slide-title a {
+    font-size: 2em; }
+
+  #main-slider .slider .slides .slide .slide-content .slide-excerpt {
+    font-size: 1.2em;
+  }
+
+  #main-slider .slider .slides .slide .slide-content .slide-button {
+    padding: 1em 3em;
+    font-size: 1.2em; }
 
 }
 
+@media only screen and (max-width: 800px) {
+
+  #main-slider .slider .slides .slide {
+    height: 500px;
+  }
+
+  #main-slider .slider .slides .slide .slide-content {
+    width: 60%;
+  }
+
+  #main-slider .slider .slides .slide .slide-content .slide-title a {
+    font-size: 1.7em; }
+
+  #main-slider .slider .slides .slide .slide-content .slide-button {
+    padding: 1em 2em;
+    font-size: 1.2em; }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  #main-slider .slider .slides .slide .slide-content {
+    width: 70%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  #main-slider .slider .slides .slide .slide-content {
+    width: 100%;
+  }
+
+}
 
 /*
 // --------------------------------------------------
@@ -342,6 +394,31 @@ ul, li {
   font-size: 1.1em;
 }
 
+@media only screen and (max-width: 950px) {
+
+  #main-info .info-content .info-item {
+    max-width: 45%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  #main-info .info-content .info-item {
+    max-width: 47%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #main-info .info-content .info-item {
+    max-width: 100%;
+  }
+
+}
+
+
 /*
 // --------------------------------------------------
 // Main About
@@ -374,6 +451,43 @@ ul, li {
   margin-bottom: 1.5em;
   font-size: 1.2em;
   line-height: 1.4em;
+}
+
+@media only screen and (max-width: 950px) {
+
+  #main-about .about-content {
+    width: 55%;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  #main-about .about-content h2 {
+    font-size: 2em;
+  }
+
+  #main-about .about-content p {
+    font-size: 1.1em;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  #main-about .about-content {
+    width: 65%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #main-about .about-content {
+    background-color:  rgba(0,173,181,0.8);
+    width: 100%;
+  }
+
 }
 
 /*
@@ -427,6 +541,22 @@ ul, li {
 #main-team .team-content .team-item .item-subtitle {
   font-weight: bold;
   color: #a7a7a7;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #main-team .team-content .team-item {
+    width: 45%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #main-team .team-content .team-item {
+    width: 100%;
+  }
+
 }
 
 /*
@@ -486,6 +616,23 @@ ul, li {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 900px) {
+
+  #main-contact #adress-contact {
+    display: block;
+  }
+
+  #main-contact #adress-contact .adress-date {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  #main-contact #adress-contact .contact-form {
+    width: 100%;
+  }
+
+}
+
 /*
 // --------------------------------------------------
 // Form
@@ -531,6 +678,31 @@ ul, li {
   color: #00ADB5;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1050px) {
+
+  .form {
+    width: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .form {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .form .text-form {
+    width: 100%;
+  }
+
+}
+
 
 /*
 // --------------------------------------------------
