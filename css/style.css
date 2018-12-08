@@ -43,10 +43,11 @@ ul, li {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-#main-header .header-content #logo {
-  background-color: aqua;
+#main-header .header-content #logo img {
+  display: block;
 }
 
 #main-header .header-content .menu-social {
@@ -56,15 +57,22 @@ ul, li {
 
 #main-header .header-content #main-menu ul li {
   display: inline-block;
+  padding: 0.8em 0.2em;
 }
 
 #main-header .header-content #main-menu ul li a {
   display: block;
-  padding: 1.2em 0.4em;
+  padding: 0.5em;
   font-family: 'Poppins', sans-serif;
   font-size: 1.1em;
   font-weight: bold;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-header .header-content #main-menu ul li a:hover {
+  background-color: #ffffff;
+  color: #00ADB5;
 }
 
 #main-header .header-content #social-icons ul li {
@@ -73,9 +81,15 @@ ul, li {
 
 #main-header .header-content #social-icons ul li a {
   display: block;
-  margin-left: 0.8em;
   font-size: 1.1em;
+  padding: 0.5em 1em;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+#main-header .header-content #social-icons ul li a:hover {
+  background-color: #ffffff;
+  color: #00ADB5;
 }
 
 #main-header.fixed {
@@ -93,7 +107,7 @@ ul, li {
 */
 
 #main-header .header-content #btn-responsive {
-	/* display: none; */
+	display: none;
 	font-size: 2em;
 	color: #ffffff;
 	cursor: pointer;
