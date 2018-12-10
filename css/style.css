@@ -55,8 +55,13 @@ ul, li {
   padding: 0.8em 0;
 }
 
-#main-header .header-content #logo img {
-  display: block;
+#main-header .header-content #logo {
+  width: 200px;
+  height: 55px;
+  background-image: url("../img/logo.svg");
+  text-indent:-99999px;
+  margin: 0;
+  padding: 0;
 }
 
 #main-header .header-content .menu-social {

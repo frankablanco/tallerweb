@@ -10,7 +10,7 @@ function initMap() {
 		zoom: 18
 	});
 
-	var addressData = '<div class="footer-map"><b>AQUITA</b> <img src="https://edempresarial.com/wp-content/themes/edepro/images/logo.svg" alt=""></div>';
+	var addressData = '<div style="padding: 0.2em 1em; background-color: #00ADB5;"><img src="http://www5.rdconsultores.pe/img/logo.svg" alt="Clínica Dental Doctor Andrés Antelo Añón">';
 
 	var data = new google.maps.InfoWindow({
 		content: addressData,
